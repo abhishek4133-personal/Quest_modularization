@@ -10,7 +10,7 @@ plugins {
 }
 
 android {
-    namespace = "com.learn.post"
+    namespace = "com.post.impl"
     compileSdk = Config.compileSdk
 
     defaultConfig {
@@ -44,7 +44,13 @@ kotlin {
 }
 
 dependencies {
-    implementation(projects.post.ui)
+// serialization
+    implementation(libs.kotlinx.serialization.core)
+    implementation(libs.kotlinx.serialization.json)
+// Retrofit
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.kotlinxSerialization)
+
 // Hilt
     implementation(libs.hilt.core)
     implementation(libs.hilt.android)

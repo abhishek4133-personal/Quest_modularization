@@ -44,8 +44,6 @@ kotlin {
 }
 
 dependencies {
-    implementation(projects.post.model)
-    implementation(projects.post.repository)
     implementation(projects.analytics.tracking)
     implementation(projects.analytics.event)
     implementation(projects.theme)

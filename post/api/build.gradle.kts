@@ -44,7 +44,6 @@ kotlin {
 }
 
 dependencies {
-    implementation(projects.post.model)
 // Retrofit
     implementation(libs.retrofit)
     implementation(libs.retrofit.converter.kotlinxSerialization)

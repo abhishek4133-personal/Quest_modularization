@@ -45,7 +45,6 @@ kotlin {
 
 dependencies {
     implementation(projects.share.api)
-    implementation(projects.post.model)
     implementation(projects.analytics.tracking)
     implementation(projects.analytics.event)
     implementation(projects.logging)
