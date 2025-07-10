@@ -1,9 +1,11 @@
-package com.azabost.quest.posts.remote.model
+package com.post.model
 
+import android.annotation.SuppressLint
 import kotlinx.serialization.Serializable
 
 typealias UsersResponse = List<UsersResponseItem>
 
+@SuppressLint("UnsafeOptInUsageError")
 @Serializable
 data class UsersResponseItem(
     val id: Int,
