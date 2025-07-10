@@ -50,6 +50,7 @@ dependencies {
     implementation(projects.analytics.event)
     implementation(projects.theme)
     implementation(projects.logging)
+    implementation(projects.share.usecase)
 // Hilt
     implementation(libs.hilt.core)
     implementation(libs.hilt.android)

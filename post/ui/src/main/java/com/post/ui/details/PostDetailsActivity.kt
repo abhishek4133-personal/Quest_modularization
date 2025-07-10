@@ -19,6 +19,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.learn.theme.QuestTheme
 import com.post.model.Post
 import dagger.hilt.android.AndroidEntryPoint
 

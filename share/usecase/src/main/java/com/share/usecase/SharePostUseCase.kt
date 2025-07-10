@@ -4,6 +4,7 @@ import com.analytics.event.AnalyticsEvent
 import com.analytics.tracking.Analytics
 import com.learn.logging.Logger
 import com.learn.logging.create
+import com.post.model.Post
 import com.share.api.ShareResult
 import com.share.api.ShareSender
 import javax.inject.Inject
