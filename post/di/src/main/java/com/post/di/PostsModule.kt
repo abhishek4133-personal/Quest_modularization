@@ -1,11 +1,8 @@
 package com.post.di
 
-import com.azabost.quest.posts.model.PostsRepository
-import com.azabost.quest.posts.remote.PostsService
-import com.azabost.quest.posts.remote.RemotePostsCache
-import com.azabost.quest.posts.remote.RemotePostsRepository
-import com.azabost.quest.time.NowProvider
 import com.learn.api.NowProvider
+import com.post.api.PostsService
+import com.post.repository.PostsRepository
 import dagger.Binds
 import dagger.Module
 import dagger.Provides
