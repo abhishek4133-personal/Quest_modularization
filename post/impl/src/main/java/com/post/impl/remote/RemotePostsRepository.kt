@@ -1,8 +1,7 @@
 package com.post.impl.remote
 
-import com.post.api.PostsService
-import com.post.model.Post
-import com.post.repository.PostsRepository
+import com.post.api.Post
+import com.post.api.PostsRepository
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 import javax.inject.Inject

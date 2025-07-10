@@ -27,7 +27,7 @@ import androidx.compose.ui.unit.dp
 import com.analytics.event.AnalyticsEvent
 import com.analytics.tracking.Analytics
 import com.learn.theme.QuestTheme
-import com.post.model.Post
+import com.post.api.Post
 import com.post.ui.details.PostDetailsActivity
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject

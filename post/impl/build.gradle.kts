@@ -44,6 +44,8 @@ kotlin {
 }
 
 dependencies {
+    implementation(projects.post.api)
+    implementation(projects.time.api)
 // serialization
     implementation(libs.kotlinx.serialization.core)
     implementation(libs.kotlinx.serialization.json)

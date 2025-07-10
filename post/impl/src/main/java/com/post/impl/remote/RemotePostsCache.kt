@@ -1,7 +1,7 @@
 package com.post.impl.remote
 
 import com.learn.api.NowProvider
-import com.post.model.Post
+import com.post.api.Post
 import javax.inject.Singleton
 
 @Singleton

@@ -8,8 +8,8 @@ import com.analytics.tracking.Analytics
 import com.learn.logging.Logger
 import com.learn.logging.create
 import com.learn.logging.event
-import com.post.model.Post
-import com.post.repository.PostsRepository
+import com.post.api.Post
+import com.post.api.PostsRepository
 import com.share.usecase.SharePostUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.ensureActive

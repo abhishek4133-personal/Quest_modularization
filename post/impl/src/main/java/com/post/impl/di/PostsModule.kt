@@ -1,11 +1,18 @@
 package com.post.impl.di
 
+import com.learn.api.NowProvider
+import com.post.api.PostsRepository
+import com.post.impl.remote.PostsService
+import com.post.impl.remote.RemotePostsCache
 import com.post.impl.remote.RemotePostsRepository
 import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import okhttp3.OkHttpClient
+import retrofit2.Converter
+import retrofit2.Retrofit
 import javax.inject.Singleton
 import kotlin.time.Duration.Companion.hours
 

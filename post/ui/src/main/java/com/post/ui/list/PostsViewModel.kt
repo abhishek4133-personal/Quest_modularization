@@ -4,8 +4,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.learn.logging.Logger
 import com.learn.logging.create
-import com.post.model.Post
-import com.post.repository.PostsRepository
+import com.post.api.Post
+import com.post.api.PostsRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.ensureActive
 import kotlinx.coroutines.flow.MutableStateFlow

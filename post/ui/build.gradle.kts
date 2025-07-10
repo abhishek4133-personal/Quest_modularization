@@ -49,6 +49,8 @@ dependencies {
     implementation(projects.theme)
     implementation(projects.logging)
     implementation(projects.share.usecase)
+    implementation(projects.post.impl)
+    implementation(projects.post.api)
 // Hilt
     implementation(libs.hilt.core)
     implementation(libs.hilt.android)
