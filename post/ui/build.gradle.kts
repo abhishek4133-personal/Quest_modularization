@@ -10,15 +10,12 @@ plugins {
 }
 
 android {
-    namespace = "com.azabost.quest"
+    namespace = "com.post.ui"
     compileSdk = Config.compileSdk
 
     defaultConfig {
-        applicationId = "com.azabost.modularization"
         minSdk = Config.minSdk
         targetSdk = Config.targetSdk
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -26,12 +23,10 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
+
     compileOptions {
         sourceCompatibility = Config.javaVersion
         targetCompatibility = Config.javaVersion
@@ -49,14 +44,17 @@ kotlin {
 }
 
 dependencies {
-    implementation(projects.time.api)
-    implementation(projects.time.impl)
-    implementation(projects.serialization)
-    implementation(projects.network)
-    implementation(projects.analytics)
-    implementation(projects.config)
+    implementation(projects.post.model)
+    implementation(projects.post.repository)
+    implementation(projects.analytics.tracking)
+    implementation(projects.analytics.event)
+    implementation(projects.theme)
     implementation(projects.logging)
-    implementation(projects.post)
+// Hilt
+    implementation(libs.hilt.core)
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.compiler)
+    implementation(libs.javax.inject)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -67,29 +65,5 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-
-    // coroutines
-    implementation(libs.kotlinx.coroutines.core)
-    implementation(libs.kotlinx.coroutines.android)
-
-    // Hilt
-    implementation(libs.hilt.core)
-    implementation(libs.hilt.android)
-    ksp(libs.hilt.compiler)
-    implementation(libs.javax.inject)
-
-    // serialization
-    implementation(libs.kotlinx.serialization.core)
-    implementation(libs.kotlinx.serialization.json)
-
-    // Retrofit
-    implementation(libs.retrofit)
-    implementation(libs.retrofit.converter.kotlinxSerialization)
-
-    testImplementation(libs.kotest.assertions.core)
-    testImplementation(libs.junit)
-    testImplementation(libs.kotlinx.coroutines.test)
-
-    debugImplementation(libs.androidx.ui.tooling)
-    debugImplementation(libs.androidx.ui.test.manifest)
 }
+
